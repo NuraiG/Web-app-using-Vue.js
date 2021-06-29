@@ -8,6 +8,7 @@
           :key="request.id"
           :email="request.userEmail"
           :message="request.message"
+          :to="request.coachId"
         ></request-item>
       </ul>
       <h3 v-if="!hasRequests">You haven't received any requests yet!</h3>

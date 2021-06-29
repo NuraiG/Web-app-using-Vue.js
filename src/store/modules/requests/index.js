@@ -5,7 +5,7 @@ import getters from "./getters.js";
 export default {
   state() {
     return {
-      requests: [],
+      requests: JSON.parse(localStorage.getItem("requests")) || [],
     };
   },
   mutations,
